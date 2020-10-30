@@ -4,14 +4,15 @@ $(document).ready(function() {
     event.preventDefault();
       const roboFormInput = $("input#roboNumbers").val();
       const robogered = [roboFormInput];
+
       robogered.forEach(function(roboFormInput) {
         if (roboFormInput >= '0' && roboFormInput <='50,000') {
-          $(".goGoRobo").show();
+          $(".roboSays").show();
           $("#roboResponse").append(roboFormInput + ", ");
         }
-        else if $('input#roboNumbers' === '1').val() {
+        else if ('roboForm#roboNumbers' === 1) {
           console.log("Beep!")
-//        $("#roboResponse").append("Beep!")
+//        $("#roboResponse").append("Beep!" + ", ")
         }
 //      if (robogered.includes(/\D/)) {
 //        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
@@ -22,13 +23,13 @@ $(document).ready(function() {
 //          alert("Not. A. Number. Try. A-gain.");
 //      }
       
-      })
+      });
     }); 
+  });
     
     
     //Business logic
     
-    const roboSays = [];
+//    const roboSays = [];
 
 
-});
