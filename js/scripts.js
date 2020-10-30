@@ -9,6 +9,9 @@ $(document).ready(function() {
 //        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
 //    } else if 
 //     if (roboFormInput.includes(/\d/)) 
+      if (roboFormInput <= 0 && ) {
+        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
+      }
         $("#roboResponse").prepend(roboFormInput + ", ");
     
     
