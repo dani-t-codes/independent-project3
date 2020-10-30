@@ -8,48 +8,29 @@
 
 _{This is where you'll give as much information about the project as possible. Include purpose, usage, as much detail as needed to explain what the application does, etc.}_
 
-## (Optional) Technologies used
+## Technologies used
 
-_{CSS}_
-_{Markdown}_
-_{HTML}_
-_{Bootstrap - yes, include libraries too!}_
-_{jQuery}_
-_{And more!}_
-
-_{Epicodus says: "Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out."}_
+_Javascript_
+_Bootstrap Library_
+_jQuery Library_
 
 ## Complete setup/installation instructions/requirements
 
-* _List setup instructions_
-* _Clearly & simply here_
-* _So that anyone who uses your app_
-* _Will be able to reproduce the app fxns, etc._
+* _For Mac users, find Terminal in your Finder, and open a new window. Install the package manager, (Homebrew) [https://brew.sh/], on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
+* _Once homebrew is installed, install Git, a version control system for code writers, with this line of code `brew install git`._
 
-_{Q's to ask in setup: Do person using an app need to run a server? How should they set up my databases? Is there other code this app depends on? Etc.}_
-
-*_For help building great READMEs, checkout the following articles..._
-* _[Medium's Kickass READMEs](https://medium.com/@meakaakka/%20a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)._
-* _[Make a README](https://www.makeareadme.com/)._
-* _[Markdown Guide](https://www.markdownguide.org/cheat-sheet)._
-* _[Awesome READMEs](https://github.com/matiassingers/awesome-readme)._
+* _For Windows users, open a new Command Prompt window by typing "Cmd" in your computer's search bar._
+* _Once you have Homebrew &/or Git installed on your computer, go to this (GitHub repository)[https://github.com/dani-t-codes/independent-project2] and clone this application with the following command:`git clone https://github.com/dani-t-codes/independent-project2`._
+* _Open the index.html in your web browser of choice, either by double-clicking the file icon inside the project folder, or by opening File>Open File>"index.html" from the independent-project2 folder that you cloned onto your computer._
+* _Read through the prompt on the index page, and enter your number to see Mr. Roboger's response._
 
 ## (Optional) Known bugs
 
 _{I am a *bug* that needs fixing. I need resolving. I might impact this app by doing xyz. But you can do abc to get around me. Can do future fix me plz!}_
 
-### (Optional) Contact info
-
-_{I am Danielle's contact info. Or naw.}_
-
-#### (Optional) Support or contribution instructions
-
-_{Issues? Questions? Ideas? Concerns? Don't we all. Contact Jane Doe at xyz, or make a contribution to the code!}_
 
 ### Legal, or License 
 
 _{License info w/ copyright & date, license type (MIT, GPL, etc), list of contributors/company name}_
 
-Copyright (c) 2020 **_{List of contributors or company name}_**
-
-_{This software is licensed under the MIT license.}_
+_MIT_ Copyright (c) 2020 **_Danielle Thompson_**
