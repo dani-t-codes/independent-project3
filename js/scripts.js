@@ -10,9 +10,15 @@ $(document).ready(function() {
           $(".roboSays").show();
           $("#roboResponse").append(roboFormInput + ", ");
         }
-        else if ('roboForm#roboNumbers' === 1) {
-          console.log("Beep!")
+        else if ('#roboNumbers'.includes(1)) {
+          console.log("Beep!");
 //        $("#roboResponse").append("Beep!" + ", ")
+        }
+        else if ('roboForm#roboNumbers' === 2) {
+          console.log('roboForm#roboNumbers')
+        }
+        else if ('roboForm#roboNumbers' === 3) {
+          console.log("Will you be my neighbor?")
         }
 //      if (robogered.includes(/\D/)) {
 //        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
