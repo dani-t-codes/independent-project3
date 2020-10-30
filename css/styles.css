@@ -2,6 +2,7 @@ body {
   background-color: slategrey;
   color: whitesmoke;
   font-family: Roboto;
+  margin-left: auto;
 }
 
 h3, h4, #roboResponse {

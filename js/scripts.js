@@ -1,15 +1,15 @@
 // User logic
 $(document).ready(function() {
-  $("#roboForm").click(function(event) {
+  $("#roboForm").submit(function(event) {
     event.preventDefault();
-      const roboFormInput = $("input#roboForm").val();
-      const roboSays = [];
+      const roboFormInput = $("input#roboNumbers").val();
       $("#roboResponse").prepend(roboFormInput + ", ");
-  }); 
-
-
-//Business logic
-  
+    }); 
+    
+    
+    //Business logic
+    
+    const roboSays = [];
 
 
 });
