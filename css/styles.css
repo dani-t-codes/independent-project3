@@ -30,3 +30,7 @@ h3, h4, #roboResponse {
 #roboForm {
   padding: 15px 15px 15px 15px;
 }
+
+#errorNaN, #errorOutOfRange {
+  display: none;
+}
