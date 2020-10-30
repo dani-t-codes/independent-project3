@@ -1,9 +1,10 @@
 // User logic
 $(document).ready(function() {
-  $("button#goGoRoboger").click(function() {
+  $("#roboForm").click(function(event) {
     event.preventDefault();
-      const roboNumbers = 
-      $("#roboResponse").prepend("roboNumbers" + ", ");
+      const roboFormInput = $("input#roboForm").val();
+      const roboSays = [];
+      $("#roboResponse").prepend(roboFormInput + ", ");
   }); 
 
 

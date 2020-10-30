@@ -46,7 +46,7 @@ _Test1b: Function should return "Boop!" into the array beepBoop [] instead of "2
 _Code: else if 2..._
 _Expect: robogerMe(2).toEqual(["Boop!"]);_
 
-_Test1c: Function should return "Won't you be my neighbor?" into the array beepBoop[] instead of "3" when a number is entered that contains "3". _
+_Test1c: Function should return "Won't you be my neighbor?" into the array beepBoop[] instead of "3" when a number is entered that contains "3"._
 _Code: else if 3..._
 _Expect: robogerMe(3).toEqual(["Won't you be my neighbor?"]);_
 
