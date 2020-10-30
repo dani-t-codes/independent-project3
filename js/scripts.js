@@ -10,7 +10,8 @@ $(document).ready(function() {
 //    } else if 
 //     if (roboFormInput.includes(/\d/)) 
       if (roboFormInput < '0' && roboFormInput > '50,000') {
-        $("#roboResponse").prompt("Not. In. Range. Try. A-gain.");
+//        $("#roboResponse").prompt("Not. In. Range. Try. A-gain.");
+        console.log("Not in range");
       }
       else if (roboFormInput >= '0' && roboFormInput <='50,000') {
         $("#roboResponse").prepend(roboFormInput + ", ");
