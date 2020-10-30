@@ -14,61 +14,60 @@ _The project will focus on using beginner-level arrays and loops in Javascript, 
 
 ## Testing 
 
--------
-Setup
--------
-Describe: beepBoop [];
-TestA: The array beepBoop []; should be created to hold incoming user-inputted values. 
-Expect: User input --> beepBoop = [userValue1, userValue2, etc.];
--------
-Error Messages 
--------
-Describe: beepBoop [];
-TestB: The user should receive an error message if any number outside of the range of 0-50,000 is entered. 
-Expect: User enters '[-432'].toEqual[("Please enter a number w/in range (0-50,000).)"]
+###### Setup
+_Describe: beepBoop [];_
+_TestA: The array beepBoop []; should be created to hold incoming user-inputted values._
+_Expect: User input --> beepBoop = [userValue1, userValue2, etc.];_
 
-TestC: The user should receive an error message if any non-number is entered. 
-Expect: User enters '["Hello!"].toEqual[("That's not a number! Try again.")]
+###### Error Messages 
+_Describe: beepBoop [];_
+_TestB: The user should receive an error message if any number outside of the range of 0-50,000 is entered._
+_Expect: User enters '[-432'].toEqual[("Please enter a number w/in range (0-50,000).)"]_
+
+_TestC: The user should receive an error message if any non-number is entered._
+_Expect: User enters '["Hello!"].toEqual[("That's not a number! Try again.")]_
 
 ![Flowchart of Error Messages](/images/Error-Messages.png)
 
-Describe: robogerMe()
-TestC: Function should return an array of numbers when a number is entered.
-Code: beepBoop.append[newNumber]
-Expect: robogerMe(4).toEqual([4]);
+###### Function 
 
-Add to function:  
+_Describe: robogerMe()_
+_Test: Function should return an array of numbers when a number is entered._
+_Code: beepBoop.append[newNumber]_
+_Expect: robogerMe(4).toEqual([4]);_
 
-Test1a: Function should add "Beep!" into the array beepBoop [] instead of "1" when a number is entered that contains "1".
-Code: if 1...
-Expect: robogerMe(1).toEqual(["Beep!"]);
+###### Add to function:  
 
-Test1b: Function should return "Boop!" into the array beepBoop [] instead of "2" when a number is entered that contains "2". 
-Code: else if 2...
-Expect: robogerMe(2).toEqual(["Boop!"]);
+_Test1a: Function should add "Beep!" into the array beepBoop [] instead of "1" when a number is entered that contains "1"._
+_Code: if 1..._
+_Expect: robogerMe(1).toEqual(["Beep!"]);_
 
-Test1c: Function should return "Won't you be my neighbor?" into the array beepBoop[] instead of "3" when a number is entered that contains "3". 
-Code: else if 3...
-Expect: robogerMe(3).toEqual(["Won't you be my neighbor?"]);
+_Test1b: Function should return "Boop!" into the array beepBoop [] instead of "2" when a number is entered that contains "2"._
+_Code: else if 2..._
+_Expect: robogerMe(2).toEqual(["Boop!"]);_
+
+_Test1c: Function should return "Won't you be my neighbor?" into the array beepBoop[] instead of "3" when a number is entered that contains "3". _
+_Code: else if 3..._
+_Expect: robogerMe(3).toEqual(["Won't you be my neighbor?"]);_
 
 
-Add Exceptions: 
+###### Add Exceptions: 
 
-Test2a: '2' is more important than '1'. 
-If a number entered by user contains both 1 and 2 (e.g. 12), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response. 
-Code: else if '1' + '2', '2' > '1'.
-["Beep!"] < ["Boop!"]
-Expect: robogerMe(12).toEqual(["Boop!"]);
+_Test2a: '2' is more important than '1'._
+_If a number entered by user contains both 1 and 2 (e.g. 12), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._ 
+_Code: else if '1' + '2', '2' > '1'._
+_["Beep!"] < ["Boop!"]_
+_Expect: robogerMe(12).toEqual(["Boop!"]);_
 
-Test2b: '3' is more important than '2'. 
-If a number entered by user contains both 2 and 3 (e.g. 32), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response. 
-Code: else if '2' + '3', '3' > '2'. ["Boop!"] < ["Won't you be my neighbor?"]
-Expect: robogerMe(12).toEqual(["Won't you be my neighbor?"]);
+_Test2b: '3' is more important than '2'._
+_If a number entered by user contains both 2 and 3 (e.g. 32), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
+_Code: else if '2' + '3', '3' > '2'. ["Boop!"] < ["Won't you be my neighbor?"]_
+_Expect: robogerMe(12).toEqual(["Won't you be my neighbor?"]);_
 
-Test3b: '3' is more important than '1'. 
-If a number entered by user contains 1, 3 (e.g. 13), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response. 
-Code: else if '1' + '3', '3' > '1'. ["Beep!"] < ["Won't you be my neighbor?"]
-Expect: robogerMe(13).toEqual(["Won't you be my neighbor?"]);
+_Test2c: '3' is more important than '1'._
+_If a number entered by user contains 1, 3 (e.g. 13), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
+_Code: else if '1' + '3', '3' > '1'. ["Beep!"] < ["Won't you be my neighbor?"]_
+_Expect: robogerMe(13).toEqual(["Won't you be my neighbor?"]);_
 
 
 ## Technologies used
