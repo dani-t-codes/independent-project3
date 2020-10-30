@@ -10,12 +10,10 @@ $(document).ready(function() {
 //    } else if 
 //     if (roboFormInput.includes(/\d/)) 
 //      if (roboFormInput < '0' && roboFormInput > '50,000') {
-        if (roboFormInput === 'Hello') {
-        alert("Not. In. Range. Try. A-gain.");
-//        $("#roboResponse").show();
-        console.log("Not in range");
+//        if (roboFormInput.includes(/\D/)) {
+//          alert("Not. A. Number. Try. A-gain.");
       }
-      else if (roboFormInput >= '0' && roboFormInput <='50,000') {
+      if (roboFormInput >= '0' && roboFormInput <='50,000') {
         $("#roboResponse").prepend(roboFormInput + ", ");
         $("#roboResponse").show();
         console.log(roboFormInput);
