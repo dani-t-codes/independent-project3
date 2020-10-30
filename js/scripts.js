@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("#roboForm").submit(function(event) {
     event.preventDefault();
       const roboFormInput = $("input#roboNumbers").val();
-      const robogered = [];
+      const robogered = [roboFormInput];
       robogered.forEach(function(roboFormInput) {
         console.log(roboFormInput);
       
