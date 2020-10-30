@@ -6,7 +6,11 @@
 
 ## Description
 
-_{This is where you'll give as much information about the project as possible. Include purpose, usage, as much detail as needed to explain what the application does, etc.}_
+_This web application takes a number between zero and 50,000 from the user and returns a 'robotic', Mr. Rogers-esque greeting in response. Any inputted number that contains the digit '1' will replace that value with a "Beep!". Any inputted number that contains the digit '2' will replace that  value with "Boop!". The number '3' will be exchanged for "Won't you be my neighbor?"._ 
+
+_For example, if the user enters the number 61,2322, the page will return the following list of values: "6", "Beep!", "Boop!", "Won't you be my neighbor?", "Boop!", "Boop!"._
+
+_The project will focus on using beginner-level arrays and loops in Javascript, as well as branching, and HTML and CSS styling where appropriate._
 
 ## Technologies used
 
