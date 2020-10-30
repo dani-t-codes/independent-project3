@@ -1,11 +1,12 @@
 body {
   background-color: slategrey;
   color: whitesmoke;
-  font: Roboto;
+  font-family: Roboto;
 }
 
-h3{
-  font: Dark Dimension Regular;
+h3, h4 {
+  font-family: Quirky Robot Italic;
+  letter-spacing: 2px;
 }
 
 #goGoRoboger:hover {
@@ -14,5 +15,6 @@ h3{
   font-size: 12px 40px;
   border: 3px solid rgba(193, 183, 183, 0.947);
   border-radius: 8px;
-  box-shadow: gray
+  box-shadow: gray;
+  font-family: Quirky Robot Italic;
 }
