@@ -5,8 +5,11 @@ $(document).ready(function() {
       const roboFormInput = $("input#roboNumbers").val();
       const robogered = [roboFormInput];
       robogered.forEach(function(roboFormInput) {
-        console.log(roboFormInput);
-      
+        if (roboFormInput >= '0' && roboFormInput <='50,000') {
+          $("#roboResponse").show();
+          $("#roboResponse").prepend(roboFormInput + ", ");
+          console.log(roboFormInput);
+        }
 
 //      if (robogered.includes(/\D/)) {
 //        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
@@ -16,11 +19,7 @@ $(document).ready(function() {
 //        if (roboFormInput.includes(/\D/)) {
 //          alert("Not. A. Number. Try. A-gain.");
 //      }
-      if (roboFormInput >= '0' && roboFormInput <='50,000') {
-        $("#roboResponse").prepend(roboFormInput + ", ");
-        $("#roboResponse").show();
-        console.log(roboFormInput);
-      }
+      
       })
     }); 
     
