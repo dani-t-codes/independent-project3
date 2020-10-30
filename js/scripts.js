@@ -8,9 +8,10 @@ $(document).ready(function() {
         if (roboFormInput >= '0' && roboFormInput <='50,000') {
           $(".goGoRobo").show();
           $("#roboResponse").append(roboFormInput + ", ");
-          console.log(roboFormInput);
         }
-
+        else if (roboFormInput.includes(1)) {
+          $("#roboResponse").replace(roboFormInput("Beep!"))
+        }
 //      if (robogered.includes(/\D/)) {
 //        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
 //    } else if 
