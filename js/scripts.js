@@ -3,12 +3,15 @@ $(document).ready(function() {
   $("#roboForm").submit(function(event) {
     event.preventDefault();
       const roboFormInput = $("input#roboNumbers").val();
+      const robogered = [];
 
-      if ("roboFormInput").includes(/\D/) {
-        $("#roboForm").alert("Try again! That's not a number.");
-      else if ("roboFormInput").includes(/\d/)
+//      if (robogered.includes(/\D/)) {
+//        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
+//    } else if 
+//     if (roboFormInput.includes(/\d/)) 
         $("#roboResponse").prepend(roboFormInput + ", ");
-      }
+    
+    
     }); 
     
     
