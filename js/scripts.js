@@ -9,8 +9,9 @@ $(document).ready(function() {
           $(".goGoRobo").show();
           $("#roboResponse").append(roboFormInput + ", ");
         }
-        else if (roboFormInput.includes(1)) {
-          $("#roboResponse").replace(roboFormInput("Beep!"))
+        else if $('input#roboNumbers' === '1').val() {
+          console.log("Beep!")
+//        $("#roboResponse").append("Beep!")
         }
 //      if (robogered.includes(/\D/)) {
 //        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
