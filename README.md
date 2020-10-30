@@ -14,14 +14,26 @@ _The project will focus on using beginner-level arrays and loops in Javascript, 
 
 ## Testing 
 
+-------
 Setup
-
+-------
 Describe: beepBoop [];
-TestA: The array beepBoop []; should be created. 
-Expect: beeBoop = [];
+TestA: The array beepBoop []; should be created to hold incoming user-inputted values. 
+Expect: User input --> beepBoop = [userValue1, userValue2, etc.];
+-------
+Error Messages 
+-------
+Describe: beepBoop [];
+TestB: The user should receive an error message if any number outside of the range of 0-50,000 is entered. 
+Expect: User enters '[-432'].toEqual[("Please enter a number w/in range (0-50,000).)"]
+
+TestC: The user should receive an error message if any non-number is entered. 
+Expect: User enters '["Hello!"].toEqual[("That's not a number! Try again.")]
+
+![Flowchart of Error Messages](/images/Error-Messages.png)
 
 Describe: robogerMe()
-TestB: Function should return an array of numbers when a number is entered.
+TestC: Function should return an array of numbers when a number is entered.
 Code: beepBoop.append[newNumber]
 Expect: robogerMe(4).toEqual([4]);
 
