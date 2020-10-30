@@ -22,6 +22,7 @@ Expect: beeBoop = [];
 
 Describe: robogerMe()
 TestB: Function should return an array of numbers when a number is entered.
+Code: beepBoop.append[newNumber]
 Expect: robogerMe(4).toEqual([4]);
 
 Add to function:  
