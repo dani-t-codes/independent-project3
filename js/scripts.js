@@ -7,7 +7,7 @@ $(document).ready(function() {
       robogered.forEach(function(roboFormInput) {
         if (roboFormInput >= '0' && roboFormInput <='50,000') {
           $(".goGoRobo").show();
-          $("#roboResponse").prepend(roboFormInput + ", ");
+          $("#roboResponse").append(roboFormInput + ", ");
           console.log(roboFormInput);
         }
 
