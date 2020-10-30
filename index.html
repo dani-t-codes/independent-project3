@@ -11,11 +11,13 @@
   <div class="container">
     <h3>Mr. Roboger's Neighborhood</h3>
     <p>Enter the right numbers between 0 and 50,000, and Mr. Roboger might respond in robot-speak. Can you figure out which numbers make him speak 'robot'?</p>
-    <form>
-      <label for="roboNumbers">Enter a number:</label>
-      <input type="text" id="roboNumbers">
+    <form id="roboForm">
+      <div class="form-group">
+        <label for="roboNumbers">Enter a number:</label>
+        <input id="roboNumbers" class="form-control" type="text" >
+      </div>
+      <button class="button" id="goGoRoboger">Go, go, Roboger!</button>
     </form>
-    <button class="button" id="goGoRoboger">Go, go, Roboger!</button>
     <div class="robogered">
       <h4> Mr. Roboger says ... </h4>
       <p id=roboResponse>

@@ -7,14 +7,25 @@ body {
 h3, h4, #roboResponse {
   font-family: Quirky Robot Italic;
   letter-spacing: 2px;
+  padding: 10px 10px 10px 10px;
+}
+
+#goGoRoboger {
+  font-size: 14pt;
 }
 
 #goGoRoboger:hover {
   background-color: #008CBA;
   color: white; 
-  font-size: 12px 40px;
+  font-size: 16pt;
+  font-style: bold;
   border: 3px solid rgba(193, 183, 183, 0.947);
   border-radius: 8px;
   box-shadow: gray;
   font-family: Quirky Robot Italic;
+  padding: 10px 10px 10px 10px;
+}
+
+#roboForm {
+  padding: 15px 15px 15px 15px;
 }
