@@ -9,8 +9,10 @@ $(document).ready(function() {
 //        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
 //    } else if 
 //     if (roboFormInput.includes(/\d/)) 
-      if (roboFormInput < '0' && roboFormInput > '50,000') {
-//        $("#roboResponse").prompt("Not. In. Range. Try. A-gain.");
+//      if (roboFormInput < '0' && roboFormInput > '50,000') {
+        if (roboFormInput === 'Hello') {
+        alert("Not. In. Range. Try. A-gain.");
+//        $("#roboResponse").show();
         console.log("Not in range");
       }
       else if (roboFormInput >= '0' && roboFormInput <='50,000') {
