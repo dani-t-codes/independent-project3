@@ -86,9 +86,9 @@ _jQuery Library_
 * _Open the index.html in your web browser of choice, either by double-clicking the file icon inside the project folder, or by opening File>Open File>"index.html" from the independent-project2 folder that you cloned onto your computer._
 * _Read through the prompt on the index page, and enter your number to see Mr. Roboger's response._
 
-## (Optional) Known bugs
+## Known bugs
 
-_{I am a *bug* that needs fixing. I need resolving. I might impact this app by doing xyz. But you can do abc to get around me. Can do future fix me plz!}_
+_Much bug. The only thing currently working as of 10.30.20 5:10pm was the user input plugging into the roboResponse section. Except for the one test I wanted to run that was *not* required in the project objects, no tests that I ran in an attempt to set any of the required exceptions passed, including for non-numbers, for 1 returning "boop!", and so forth._
 
 
 ### Legal, or License 
