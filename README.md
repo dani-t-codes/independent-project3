@@ -58,6 +58,7 @@ _If a number entered by user contains both 1 and 2 (e.g. 12), the number should 
 _Code: else if '1' + '2', '2' > '1'._
 _["Beep!"] < ["Boop!"]_
 _Expect: robogerMe(12).toEqual(["Boop!"]);_
+_Note: see "comparing strings" section on MDN for syntax guidance (?). [Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)._
 
 _Test2b: '3' is more important than '2'._
 _If a number entered by user contains both 2 and 3 (e.g. 32), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
