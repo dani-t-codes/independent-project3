@@ -55,19 +55,19 @@ _Expect: robogerMe(3).toEqual(["Won't you be my neighbor?"]);_
 
 _Test2a: '2' is more important than '1'._
 _If a number entered by user contains both 1 and 2 (e.g. 12), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._ 
-_Code: else if '1' + '2', '2' > '1'._
+_Code: else if number.includes ('1' && '2'), return '2' > '1'._
 _["Beep!"] < ["Boop!"]_
 _Expect: robogerMe(12).toEqual(["Boop!"]);_
 _Note: see "comparing strings" section on MDN for syntax guidance (?). [Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)._
 
 _Test2b: '3' is more important than '2'._
 _If a number entered by user contains both 2 and 3 (e.g. 32), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
-_Code: else if '2' + '3', '3' > '2'. ["Boop!"] < ["Won't you be my neighbor?"]_
+_Code: else if number.includes('2' || '2' && '3'), return '3' > '2'. ["Boop!"] < ["Won't you be my neighbor?"]_
 _Expect: robogerMe(12).toEqual(["Won't you be my neighbor?"]);_
 
 _Test2c: '3' is more important than '1'._
 _If a number entered by user contains 1, 3 (e.g. 13), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
-_Code: else if '1' + '3', '3' > '1'. ["Beep!"] < ["Won't you be my neighbor?"]_
+_Code: else if number.includes('1' || '1' && '3'), return '3' > '1'. ["Beep!"] < ["Won't you be my neighbor?"]_
 _Expect: robogerMe(13).toEqual(["Won't you be my neighbor?"]);_
 
 
