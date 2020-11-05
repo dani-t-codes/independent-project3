@@ -11,19 +11,21 @@ $(document).ready(function() {
  //Business Logic     
 //const beepOutput = "Beep!";
 //let beepMe = function(beepOutput) 
-let formFlag = false;  
-let formSequence = ["1", "2"];
-
-for (let i = 0; i < formSequence.length; i ++) {
-  if (formSequence[i] === "1") {
+let formFlag = false;
+for (let i = 0; i < robogered.length; i ++) {
+  if (robogered[i] === "1") {
     formFlag = true;
+    console.log(true);
     break;
   };
-  console.log("Looped!");
-  }
-  formFlag
-  })
+};
+}); 
 });
+//   else if (formSequence.isNan() {
+//     return alert("Not. A. Number. Please. Try. Again.")
+//   };
+//   };
+// });
 
 
 
