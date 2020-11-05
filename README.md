@@ -37,20 +37,33 @@ _Describe: robogered = [];_
 _Test: The array robogered = []; should be created to hold incoming user-inputted values._
 
 
-###### Function 
-_Describe: beepBoop();_
-_Test: The function `beepBoop();` should return the value the user inputs into the form to array `robogered []`_
-_Code: beepBoop.append[newNumber]_ 
+###### Submit Button 
+_Describe: Submit Button_
+_Test: When the user hits the "Go, Go, Roboger" button, the "roboSays" section of index page should show._
+_Expect: .click(button).show(userInput)_
+
+_Test: The value the user submits into the form should get pushed to array `robogered []`._
 _Expect: beepBoop(4).toEqual([4]);_
+
+_Test: The value the user submits into the form should get appended to the DOM "roboSays"._
+_Code: robogered.append[newNumber]_ 
+_Expect: newNumber to append to "RoboSays" section in browser._
+
+_Describe: beepBoop();_
+_Test: The function `beepBoop(); should turn the value the user inputs from form into a string._
+_Expect: beepBoop(4).toString(["4"]);_
+
+_Test: The function 'beepBoop(); should evaluate if the (now) string value .includes(1) and return true._
+_Expect: robogered.includes("12").toEqual("Beep!")_
 
 
 _Test1a: Function should add "Beep!" into the array beepBoop [] instead of "1" when a number is entered that contains "1"._
 _Code: if 1..._
-_Expect: robogered(1).toEqual(["Beep!"]);_
+_Expect: beepBoop(1).toEqual(["Beep!"]);_
 
 _Test1b: Function should return "Boop!" into the array beepBoop [] instead of "2" when a number is entered that contains "2"._
 _Code: else if 2..._
-_Expect: robogered(2).toEqual(["Boop!"]);_
+_Expect: beepBoop(2).toEqual(["Boop!"]);_
 
 _Test1c: Function should return "Won't you be my neighbor?" into the array beepBoop[] instead of "3" when a number is entered that contains "3"._
 _Code: else if 3..._

@@ -3,19 +3,28 @@ $(document).ready(function() {
   $("#roboForm").submit(function(event) {
     event.preventDefault();
       let roboFormInput = $("input#roboNumbers").val();
+      roboFormInput.toString();
       let robogered = [];
       robogered.push(roboFormInput);
       $(".roboSays").show();
       $("#roboResponse").append(roboFormInput + ", ");
       
+      
  //Business Logic     
 //const beepOutput = "Beep!";
 //let beepMe = function(beepOutput) 
+
+function beepMe(number) {
+  if (number === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
 let formFlag = false;
 for (let i = 0; i < robogered.length; i ++) {
   if (robogered[i] === "1") {
     formFlag = true;
-    console.log(true);
     break;
   };
 };
