@@ -4,7 +4,7 @@ $(document).ready(function() {
     event.preventDefault();
       let roboFormInput = $("input#roboNumbers").val();
       let robogered = [];
-      console.log(robogered)
+        console.log(robogered.push(roboFormInput));
 //      const beepBoop = function()
       
 //      roboFormInput.push([robogered]);
