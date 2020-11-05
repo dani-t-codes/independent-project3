@@ -11,27 +11,35 @@ $(document).ready(function() {
  //Business Logic     
 //const beepOutput = "Beep!";
 //let beepMe = function(beepOutput) 
- // {
-    if (roboFormInput === 1) {
-      console.log(true);
-    }
-//  }
+let formFlag = false;  
+let formSequence = ["1", "2"];
 
-    robogered.forEach(function(roboFormInput) {
-      if ("#roboResponse" === 1) {
-        return true
-//        $("#roboResponse").append("Beep!" + ", ")
-      }
-      else if ('roboForm#roboNumbers' === 2) {
-        console.log('roboForm#roboNumbers')
-      }
-      else if ('roboForm#roboNumbers' === 3) {
-        console.log("Will you be my neighbor?")
-      }
-      
-    });
-  }); 
+for (let i = 0; i < formSequence.length; i ++) {
+  if (formSequence[i] === "1") {
+    formFlag = true;
+    break;
+  };
+  console.log("Looped!");
+  }
+  formFlag
+  })
 });
+
+
+
+  //   if ("#roboResponse" === 1) {
+  //     return true
+  // //        $("#roboResponse").append("Beep!" + ", ")
+  //   }
+  //   else if ('roboForm#roboNumbers' === 2) {
+  //     console.log('roboForm#roboNumbers')
+  //   }
+  //   else if ('roboForm#roboNumbers' === 3) {
+  //     console.log("Will you be my neighbor?")
+  //   }
+  // })
+  // }); 
+
   
   
   //Business logic
@@ -45,7 +53,7 @@ $(document).ready(function() {
   
   
   
-  //Testing
+  //Extras
   //if (roboFormInput >= '0' && roboFormInput <='50,000') {
     //  $(".roboSays").show();
     //  
@@ -59,4 +67,4 @@ $(document).ready(function() {
     //      if (roboFormInput < '0' && roboFormInput > '50,000') {
     //        if (roboFormInput.includes(/\D/)) {
     //          alert("Not. A. Number. Try. A-gain.");
-    //      }
+    //  });
