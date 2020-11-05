@@ -2,16 +2,17 @@
 $(document).ready(function() {
   $("#roboForm").submit(function(event) {
     event.preventDefault();
-      const roboFormInput = $("input#roboNumbers").val();
-      const robogered = [roboFormInput];
+      let roboFormInput = $("input#roboNumbers").val();
+      console.log(roboFormInput)
+      let robogered = [];
+//      const beepBoop = function()
+      
+//      roboFormInput.push([robogered]);
 
       robogered.forEach(function(roboFormInput) {
-        if (roboFormInput >= '0' && roboFormInput <='50,000') {
-          $(".roboSays").show();
-          $("#roboResponse").append(roboFormInput + ", ");
-        }
-        else if ('#roboNumbers'.includes(1)) {
-          console.log("Beep!");
+        console.log(roboFormInput);
+        if (roboFormInput === 1) {
+//          $(".roboSays").show();
 //        $("#roboResponse").append("Beep!" + ", ")
         }
         else if ('roboForm#roboNumbers' === 2) {
@@ -20,22 +21,35 @@ $(document).ready(function() {
         else if ('roboForm#roboNumbers' === 3) {
           console.log("Will you be my neighbor?")
         }
-//      if (robogered.includes(/\D/)) {
-//        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
-//    } else if 
-//     if (roboFormInput.includes(/\d/)) 
-//      if (roboFormInput < '0' && roboFormInput > '50,000') {
-//        if (roboFormInput.includes(/\D/)) {
-//          alert("Not. A. Number. Try. A-gain.");
-//      }
-      
+        
       });
     }); 
   });
-    
-    
-    //Business logic
-    
-//    const roboSays = [];
+  
+  
+  //Business logic
+  
+  //    const roboSays = [];
+  
+  
+  
+  
+  
+  
+  
+  
+  //Testing
+  //if (roboFormInput >= '0' && roboFormInput <='50,000') {
+    //  $(".roboSays").show();
+    //  $("#roboResponse").append(roboFormInput + ", ");
+    //}
 
 
+    //      if (robogered.includes(/\D/)) {
+    //        $("#roboResponse").prompt("Not. A. Number. Try. A-gain.");
+    //    } else if 
+    //     if (roboFormInput.includes(/\d/)) 
+    //      if (roboFormInput < '0' && roboFormInput > '50,000') {
+    //        if (roboFormInput.includes(/\D/)) {
+    //          alert("Not. A. Number. Try. A-gain.");
+    //      }
