@@ -4,7 +4,9 @@ $(document).ready(function() {
     event.preventDefault();
       let roboFormInput = $("input#roboNumbers").val();
       let robogered = [];
-        console.log(robogered.push(roboFormInput));
+        robogered.push(roboFormInput);
+        $(".roboSays").show();
+        $("#roboResponse").append(roboFormInput + ", ");
 //      const beepBoop = function()
       
 //      roboFormInput.push([robogered]);
@@ -12,7 +14,6 @@ $(document).ready(function() {
       robogered.forEach(function(roboFormInput) {
         console.log(roboFormInput);
         if (roboFormInput === 1) {
-//          $(".roboSays").show();
 //        $("#roboResponse").append("Beep!" + ", ")
         }
         else if ('roboForm#roboNumbers' === 2) {
@@ -41,7 +42,7 @@ $(document).ready(function() {
   //Testing
   //if (roboFormInput >= '0' && roboFormInput <='50,000') {
     //  $(".roboSays").show();
-    //  $("#roboResponse").append(roboFormInput + ", ");
+    //  
     //}
 
 
