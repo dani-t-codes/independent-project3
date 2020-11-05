@@ -26,10 +26,10 @@ function beepBoop(number) {
   }
 }
 
-let formFlag = false;
+let userInput = false;
 for (let i = 0; i < robogered.length; i ++) {
   if (robogered[i] === "1") {
-    formFlag = true;
+    userInput = true;
     break;
   };
 };
