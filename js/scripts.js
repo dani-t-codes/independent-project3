@@ -14,13 +14,18 @@ $(document).ready(function() {
 //const beepOutput = "Beep!";
 //let beepMe = function(beepOutput) 
 
-function beepMe(number) {
+function beepBoop(number) {
   if (number === 1) {
-    return true;
-  } else {
-    return false;
+    console.log("Beep!");
+  } else if (number === 2) {
+    console.log("Boop!");
+  } else if (number === 3) {
+    console.log("Will you be my neighbor?");
+  } else if (number != 1 || 2 || 3) {
+    console.log(number);
   }
 }
+
 let formFlag = false;
 for (let i = 0; i < robogered.length; i ++) {
   if (robogered[i] === "1") {
