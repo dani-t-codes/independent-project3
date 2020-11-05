@@ -4,10 +4,14 @@ $(document).ready(function() {
     event.preventDefault();
       let roboFormInput = $("input#roboNumbers").val();
       let robogered = [];
-        robogered.push(roboFormInput);
-        $(".roboSays").show();
-        $("#roboResponse").append(roboFormInput + ", ");
-//      const beepBoop = function()
+      robogered.push(roboFormInput);
+      $(".roboSays").show();
+      $("#roboResponse").append(roboFormInput + ", ");
+  
+ //Business Logic     
+      function beepMe(number) {
+        console.log("Beep!");
+      }
 
     robogered.forEach(function(roboFormInput) {
       console.log(roboFormInput);
