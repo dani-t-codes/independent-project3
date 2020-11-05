@@ -7,14 +7,17 @@ $(document).ready(function() {
       robogered.push(roboFormInput);
       $(".roboSays").show();
       $("#roboResponse").append(roboFormInput + ", ");
-  
+      
  //Business Logic     
-      function beepMe(number) {
-        console.log("Beep!");
-      }
+//const beepOutput = "Beep!";
+//let beepMe = function(beepOutput) 
+ // {
+    if (roboFormInput === 1) {
+      console.log(true);
+    }
+//  }
 
     robogered.forEach(function(roboFormInput) {
-      console.log(roboFormInput);
       if ("#roboResponse" === 1) {
         return true
 //        $("#roboResponse").append("Beep!" + ", ")
