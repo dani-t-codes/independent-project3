@@ -8,24 +8,23 @@ $(document).ready(function() {
         $(".roboSays").show();
         $("#roboResponse").append(roboFormInput + ", ");
 //      const beepBoop = function()
-      
-//      roboFormInput.push([robogered]);
 
-      robogered.forEach(function(roboFormInput) {
-        console.log(roboFormInput);
-        if (roboFormInput === 1) {
+    robogered.forEach(function(roboFormInput) {
+      console.log(roboFormInput);
+      if ("#roboResponse" === 1) {
+        return true
 //        $("#roboResponse").append("Beep!" + ", ")
-        }
-        else if ('roboForm#roboNumbers' === 2) {
-          console.log('roboForm#roboNumbers')
-        }
-        else if ('roboForm#roboNumbers' === 3) {
-          console.log("Will you be my neighbor?")
-        }
-        
-      });
-    }); 
-  });
+      }
+      else if ('roboForm#roboNumbers' === 2) {
+        console.log('roboForm#roboNumbers')
+      }
+      else if ('roboForm#roboNumbers' === 3) {
+        console.log("Will you be my neighbor?")
+      }
+      
+    });
+  }); 
+});
   
   
   //Business logic
