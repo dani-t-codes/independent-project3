@@ -3,8 +3,8 @@ $(document).ready(function() {
   $("#roboForm").submit(function(event) {
     event.preventDefault();
       let roboFormInput = $("input#roboNumbers").val();
-      console.log(roboFormInput)
       let robogered = [];
+      console.log(robogered)
 //      const beepBoop = function()
       
 //      roboFormInput.push([robogered]);
