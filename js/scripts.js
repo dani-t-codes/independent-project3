@@ -18,11 +18,12 @@ function beepBoop(rangeStart, rangeStop) {
 //  robogered.map(i, n);
   for (let i = rangeStart; i < rangeStop; i ++) {
     output += i + ',';
+    //line 20 "output" puts commas between numbers in range output
   }
   return output;
-    // if (rangeStop === 1) {
-    //   console.log("0", "Beep!")
-    // } else if (number === 2) {
+    // if (1)  {
+    //    console.log("0", "Beep!")
+    //  } else if (number === 2) {
     //   console.log("0", "1", "Boop!");
     // } else if (number === 3) {
     //   console.log("0", "1", "2", "Will you be my neighbor?");
@@ -34,8 +35,11 @@ function beepBoop(rangeStart, rangeStop) {
 //const beepOutput = "Beep!";
 //let beepMe = function(beepOutput) 
 
+//**Better way to do range ? 
+// const range = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min + i);
 
-
+// range(5, 10);
+// test passed
 
 
 
