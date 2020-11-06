@@ -5,7 +5,6 @@ $(document).ready(function() {
     event.preventDefault();
     let roboFormInput = $("input#roboNumbers").val();
     let robogered = [];
-
     robogered.push(roboFormInput);
     //I think the two lines of code below (10 & 11) would get added to the for loop on 31 with if/else if statements attached.
     $(".roboSays").show();
@@ -14,22 +13,23 @@ $(document).ready(function() {
 });
 
 //Business Logic  
-function beepBoop(number) {
-//  let n = roboFormInput
-
-  robogered.map(i, n);
-  for (let i = 0; i < robogered.length; i ++) {
-    if (n === "1") {
-      console.log("0", "Beep!")
-    } else if (number === 2) {
-      console.log("0", "1", "Boop!");
-    } else if (number === 3) {
-      console.log("0", "1", "2", "Will you be my neighbor?");
-    } else if (number === isNaN) {
-      console.log("Not. A. Number. Please. Try. Again.");
-    }
-    };
-  } 
+function beepBoop(rangeStart, rangeStop) {
+  let output = "";
+//  robogered.map(i, n);
+  for (let i = rangeStart; i < rangeStop; i ++) {
+    output += i + ',';
+  }
+  return output;
+    // if (rangeStop === 1) {
+    //   console.log("0", "Beep!")
+    // } else if (number === 2) {
+    //   console.log("0", "1", "Boop!");
+    // } else if (number === 3) {
+    //   console.log("0", "1", "2", "Will you be my neighbor?");
+    // } else if (number === isNaN) {
+    //   console.log("Not. A. Number. Please. Try. Again.");
+    // }
+    }; 
     
 //const beepOutput = "Beep!";
 //let beepMe = function(beepOutput) 
