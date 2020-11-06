@@ -42,62 +42,59 @@ _Describe: Submit Button_
 _Test: When the user hits the "Go, Go, Roboger" button, the "roboSays" section of index page should show._
 _Expect: .click(button).show(userInput)_
 
-_Test: The value the user submits into the form should get pushed to array `robogered []`._
+_Test: The number the user submits into the form should get pushed to array `robogered []`._
 _Expect: beepBoop(4).toEqual([4]);_
-
-_Test: The value the user submits into the form should get appended to the DOM "roboSays"._
-_Code: robogered.append[newNumber]_ 
-_Expect: newNumber to append to "RoboSays" section in browser._
 
 _Describe: beepBoop();_
 _Test: The function `beepBoop(); should turn the value the user inputs from form into a string._
 _Expect: beepBoop(4).toString(["4"]);_
 
+_Test: The array 'robogered' should get added to the DOM section "roboSays" and display a range of values from 0 to userNumber._
+_Expect: robogered.text[0:userNum]_ 
+
 _Test: The function 'beepBoop(); should evaluate if the (now) string value .includes(1) and return true._
 _Expect: robogered.includes("12").toEqual("Beep!")_
 
-
-_Test1a: Function should add "Beep!" into the array beepBoop [] instead of "1" when a number is entered that contains "1"._
+_Test1a: Function should add "Beep!" into the array beepBoop [] in place of "1"._
 _Code: if 1..._
-_Expect: beepBoop(1).toEqual(["Beep!"]);_
+_Expect: beepBoop(1).toEqual(["0", "Beep!"]);_
 
-_Test1b: Function should return "Boop!" into the array beepBoop [] instead of "2" when a number is entered that contains "2"._
+_Test1b: Function should return "Boop!" into the array beepBoop [] in place of "2"._
 _Code: else if 2..._
-_Expect: beepBoop(2).toEqual(["Boop!"]);_
+_Expect: beepBoop(2).toEqual(["0", "1", "Boop!"]);_
 
-_Test1c: Function should return "Won't you be my neighbor?" into the array beepBoop[] instead of "3" when a number is entered that contains "3"._
+_Test1c: Function should return "Won't you be my neighbor?" into the array beepBoop[] in place of "3"._
 _Code: else if 3..._
-_Expect: robogered(3).toEqual(["Won't you be my neighbor?"]);_
+_Expect: robogered(3).toEqual(["0", "1", "2", "Won't you be my neighbor?"]);_
 
 
 ###### Add Exceptions: 
 
 _Test2a: '2' is more important than '1'._
 _If a number entered by user contains both 1 and 2 (e.g. 12), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._ 
-_Code: else if number.includes ('1' && '2'), return '2' > '1'._
-_["Beep!"] < ["Boop!"]_
-_Expect: robogered(12).toEqual(["Boop!"]);_
+_Code: else if number.includes ('1' && '2'), return '2' > '1'. ["Beep!"] < ["Boop!"]._
+_Expect: robogered(12).toEqual([... "8", "9", "Beep!", "Beep!", "Boop!"]);_
 _Note: see "comparing strings" & "string primitives & string objects" section on MDN for syntax guidance (?). [Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)._
 
 _Test2b: '3' is more important than '2'._
-_If a number entered by user contains both 2 and 3 (e.g. 32), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
-_Code: else if number.includes('2' || '2' && '3'), return '3' > '2'. ["Boop!"] < ["Won't you be my neighbor?"]_
-_Expect: robogerMe(12).toEqual(["Won't you be my neighbor?"]);_
+_If a number entered by user contains both 2 and 3 (e.g. 23), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
+_Code: else if number.includes('2' && '3'), return '3' > '2'. ["Boop!"] < ["Won't you be my neighbor?"]._
+_Expect: robogered(23).toEqual([..."Boop!", "Won't you be my neighbor?", 24, 25, 26]);_
 
 _Test2c: '3' is more important than '1'._
 _If a number entered by user contains 1, 3 (e.g. 13), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
-_Code: else if number.includes('1' || '1' && '3'), return '3' > '1'. ["Beep!"] < ["Won't you be my neighbor?"]_
-_Expect: robogerMe(13).toEqual(["Won't you be my neighbor?"]);_
+_Code: else if number.includes('1' && '3'), return '3' > '1'. ["Beep!"] < ["Won't you be my neighbor?"]_
+_Expect: robogered(13).toEqual([...8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]);_
 
-###### Error Messages 
+<!-- ###### Error Messages 
 _Describe: robogered [];_
 _TestB: The user should receive an error message if any number outside of the range of 0-50,000 is entered._
-_Expect: User enters '[-432'].toEqual[("Please enter a number w/in range (0-50,000).)"]_
+_Expect: User enters [-432'].toEqual[("Please enter a number w/in range (0-50,000).)"]_
 
 _TestC: The user should receive an error message if any non-number is entered._
-_Expect: User enters '["Hello!"].toEqual[("That's not a number! Try again.")]_
+_Expect: User enters ["Hello!"].toEqual[("That's not a number! Try again.")]_
 
-![Flowchart of Error Messages](/images/Error-Messages.png)
+![Flowchart of Error Messages](/images/Error-Messages.png) !-->
 
 ## Known bugs
 
