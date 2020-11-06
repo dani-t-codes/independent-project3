@@ -3,12 +3,11 @@ $(document).ready(function() {
   $("#roboForm").submit(function(event) {
     event.preventDefault();
       let roboFormInput = $("input#roboNumbers").val();
-      roboFormInput.toString();
       let robogered = [];
-      robogered.push(roboFormInput);
+      robogered.push.toString((roboFormInput));
       //I think the two lines of code below (10 & 11) would get added to the for loop on 31 with if/else if statements attached.
       $(".roboSays").show();
-      $("#roboResponse").append(roboFormInput + ", ");
+      $("#roboResponse").text(roboFormInput);
       
       
  //Business Logic     
