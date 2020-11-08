@@ -7,17 +7,18 @@ function beepBoop(rangeStart, rangeStop) {
     //line 20 "output" puts commas between numbers in range output
   }
 //  return output;
-     if (output.includes(1));  {
-       return true};
-    //    console.log("0", "Beep!")
-    //  } else if (number === 2) {
+    if (output.includes(1 || 2 || 3));  {
+      console.log("Beep");
+//      console.log("Beep!");  //has not passed
+  } 
     //   console.log("0", "1", "Boop!");
     // } else if (number === 3) {
     //   console.log("0", "1", "2", "Will you be my neighbor?");
     // } else if (number === isNaN) {
     //   console.log("Not. A. Number. Please. Try. Again.");
     // }
-    }; 
+    };
+
     
 //const beepOutput = "Beep!";
 //let beepMe = function(beepOutput) 
