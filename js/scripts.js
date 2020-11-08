@@ -21,7 +21,8 @@ function beepBoop(rangeStart, rangeStop) {
     //line 20 "output" puts commas between numbers in range output
   }
   return output;
-    // if (1)  {
+    // if rogobered.includes(1)  {
+    //   return true
     //    console.log("0", "Beep!")
     //  } else if (number === 2) {
     //   console.log("0", "1", "Boop!");
@@ -47,7 +48,7 @@ function beepBoop(rangeStart, rangeStop) {
 
 //   if ("#roboResponse" === 1) {
 //     return true
-//   $("#roboResponse").append("Beep!" + ", ")
+//   $("#roboResponse").text("Beep!" + ", ")
 //   } else if ('roboForm#roboNumbers' === 2) {
 //     console.log('roboForm#roboNumbers')
 //   }
