@@ -10,17 +10,20 @@
 <body>
   <div class="container">
     <h3>Mr. Roboger's Neighborhood</h3>
-    <p>Enter a number, and see what Mr. Roboger has to say in response.</p>
-    <form id="roboForm">
-      <div class="form-group">
-        <label for="roboNumbers">Enter a number:</label>
-        <input id="roboNumbers" class="form-control" type="text">
-      </div>
-      <button type="submit" class="button" id="goGoRoboger">Go, go, Roboger!</button>
-    </form>
+    <div id="bye-bye-form">
+      <p>Enter a number, and see what Mr. Roboger has to say in response.</p>
+      <form id="roboForm">
+        <div class="form-group">
+          <label for="roboNumbers">Enter a number:</label>
+          <input id="roboNumbers" class="form-control" type="text">
+        </div>
+        <button type="submit" class="button" id="goGoRoboger">Go, go, Roboger!</button>
+      </form>
+    </div>
     <div class="roboSays">
       <h4> Mr. Roboger says ... </h4>
       <p id=roboResponse></p>
+      <button type="submit" class="button" id="try-again">Try again!</button>
     </div>
   </div>
 </body>
