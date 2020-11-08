@@ -6,9 +6,9 @@ function beepBoop(rangeStart, rangeStop) {
     output += i + ',';
     //line 20 "output" puts commas between numbers in range output
   }
-  return output;
-    //  if output.includes(1)  {
-    //    return true};
+//  return output;
+     if (output.includes(1));  {
+       return true};
     //    console.log("0", "Beep!")
     //  } else if (number === 2) {
     //   console.log("0", "1", "Boop!");
@@ -32,23 +32,20 @@ function beepBoop(rangeStart, rangeStop) {
 
 
 // User Interface
-
 $(document).ready(function() {
   $("#roboForm").submit(function(event) {
     event.preventDefault();
     let roboFormInput = $("input#roboNumbers").val();
     let robogered = [];
     robogered.push(roboFormInput);
-    //I think the two lines of code below (10 & 11) would get added to the for loop on 31 with if/else if statements attached.
+    //I think the two lines of code below would get added to the for loop on 31 with if/else if statements attached.
     $(".roboSays").show();
     $("#bye-bye-form").hide();
-  //    // currently stops form data from sending  
     $("#roboResponse").text(roboFormInput);
   });   
   
-  //Try Again UI
+  //Robo Says UI
   $("#try-again").click(function(event) {
-//    $("#roboForm").reset();
     $(".roboSays").hide();
     $("#bye-bye-form").show();
     $('input#roboNumbers').val('');
