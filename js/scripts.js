@@ -1,32 +1,48 @@
 //Business Logic  
-function beepBoop(max) {
-  let robogered = [];
-//  robogered.map(i, n);
-//  let n = userInput;
-  for (let i = 0; i <= max; i ++) {
-    robogered.push(i);
-    return robogered;
-//    array += i + ',';
-    //line 20 "output" puts commas between numbers in range output
-
-//  return output;
-    // if (output.includes(1))  {
-    //   console.log("Beep!");
-    // } else if (output.includes((2) || (2 && 1))) {
-    //   console.log("Boop!");
-    // } if (array.includes((3) || (3 && 2))) {
-    //   console.log("Will you be my neighbor?");
-    // } else if (array < 0 || array.includes("")) {
-    //   console.log("Not. A. Number. Please. Try. Again.");
-    // };
+function beepBoop(n) {
+    for (let i=0; i <= n; i ++) {
+      if (i == 3) {
+          console.log('Will you be my neighbor?');
+        } else if (i == 2) {
+          console.log('Boop!');
+      } else if (i ==1) {
+          console.log('Beep!');
+      } else {
+          console.log(i);
+      }
+    }
   }
-//**Better way to do range ? 
-// const range = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min + i);
+  // let robogered = [];
+  // let x = 1;
+  // let y = 2;
+  // let z = 3;
 
-// range(5, 10);
-// test passed
+  // for (let i = 0; i <= n; i ++) {
+  //   robogered.push(i); 
+  // };
+  //   //robogered.toString(i);
+  //   return robogered; 
 
-
+  //   function beepBoopToString(max) {
+  //     return robogered.toString();
+  //   }
+  // };
+  // } if (robogered.includes((3) || (3 && 2) || (3 && 1))) {
+  //   String.replaceAll("Will you be my neighbor?");
+  //   if (robogered.includes('1'))  {
+  //     function beepIt {
+  //     String.replaceAll('1', 'Beep!');
+  //   }
+  // };
+    // } else if (robogered.includes((2) || (2 && 1))) {
+    //   String.replaceAll('2', "Boop!");
+      // } else {
+      //       console.log(i);
+      // }
+    
+    
+    if (i.has(3))
+      return true;
 
 
 // User Interface
