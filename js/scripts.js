@@ -1,7 +1,7 @@
 //Business Logic  
 function beepBoop(n) {
     for (let i=0; i <= n; i ++) {
-      if (i == 3) {
+      if ((i == 3)|| (i.has(3))) {
           console.log('Will you be my neighbor?');
         } else if (i == 2) {
           console.log('Boop!');
