@@ -1,28 +1,25 @@
 //Business Logic  
-function beepBoop(rangeStart, rangeStop) {
-  let output = '';
+function beepBoop(max) {
+  let robogered = [];
 //  robogered.map(i, n);
-  for (let i = rangeStart; i < rangeStop; i ++) {
-    output += i + ',';
+//  let n = userInput;
+  for (let i = 0; i <= max; i ++) {
+    robogered.push(i);
+    return robogered;
+//    array += i + ',';
     //line 20 "output" puts commas between numbers in range output
-  }
+
 //  return output;
-    if (output.includes(1 || 2 || 3));  {
-      console.log("Beep");
-//      console.log("Beep!");  //has not passed
-  } 
-    //   console.log("0", "1", "Boop!");
-    // } else if (number === 3) {
-    //   console.log("0", "1", "2", "Will you be my neighbor?");
-    // } else if (number === isNaN) {
+    // if (output.includes(1))  {
+    //   console.log("Beep!");
+    // } else if (output.includes((2) || (2 && 1))) {
+    //   console.log("Boop!");
+    // } if (array.includes((3) || (3 && 2))) {
+    //   console.log("Will you be my neighbor?");
+    // } else if (array < 0 || array.includes("")) {
     //   console.log("Not. A. Number. Please. Try. Again.");
-    // }
-    };
-
-    
-//const beepOutput = "Beep!";
-//let beepMe = function(beepOutput) 
-
+    // };
+  }
 //**Better way to do range ? 
 // const range = (min, max) => Array.from({ length: max - min + 1 }, (_, i) => min + i);
 
@@ -90,4 +87,3 @@ $(document).ready(function() {
     //      if (roboFormInput < '0' && roboFormInput > '50,000') {
     //        if (roboFormInput.includes(/\D/)) {
     //          alert("Not. A. Number. Try. A-gain.");
-    //  });
