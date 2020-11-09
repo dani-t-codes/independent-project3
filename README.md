@@ -6,22 +6,16 @@
 
 ## Description
 
-_This web application takes a number between zero and 50,000 from the user and returns a 'robotic', Mr. Rogers-esque greeting in response. Any inputted number that contains the digit '1' will replace that value with a "Beep!". Any inputted number that contains the digit '2' will replace that  value with "Boop!". The number '3' will be exchanged for "Won't you be my neighbor?"._ 
+_This web application takes a number from the user and returns a 'robotic', Mr. Rogers-esque range of numbers in response. Any number in range from 0 to the user's inputted value that contains the digit '1' will be replaced with a "Beep!". Any inputted number that contains the digit '2' will be replaced with "Boop!". The number '3' will be exchanged for "Won't you be my neighbor?". Where two or more of the substituted numbers occur simultaneously, the returned word will be attributed to the higher number value (i.e. if 23, then "Won't you be my neighbor?")_ 
 
-_For example, if the user enters the number 61,2322, the page will return the following list of values: "6", "Beep!", "Boop!", "Won't you be my neighbor?", "Boop!", "Boop!"._
-
-_The project will focus on using beginner-level arrays and loops in Javascript, as well as branching, and HTML and CSS styling where appropriate._
-
-
+_This project focuses on using beginner-level arrays and loops in Javascript, as well as branching, and HTML and CSS styling where appropriate._
 
 ## Technologies used
-
 _Javascript_
 _Bootstrap Library_
 _jQuery Library_
 
 ## Complete setup/installation instructions/requirements
-
 * _For Mac users, find Terminal in your Finder, and open a new window. Install the package manager, (Homebrew) [https://brew.sh/], on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
 * _Once homebrew is installed, install Git, a version control system for code writers, with this line of code `brew install git`._
 
@@ -33,60 +27,64 @@ _jQuery Library_
 ## Testing 
 
 ###### Setup
-_Describe: robogered = [];_
-_Test: The array robogered = []; should be created to hold incoming user-inputted values._
-
+_Describe: roboArray_
+_Test: The array roboArray = []; should be created to hold incoming user-inputted values._
+_Expect: roboArray = [];_
 
 ###### Submit Button 
 _Describe: Submit Button_
 _Test: When the user hits the "Go, Go, Roboger" button, the "roboSays" section of index page should show._
-_Expect: .click(button).show(userInput)_
+_Expect: .submit(button).show(userInput)_
 
-_Test: The number the user submits into the form should get pushed to array `robogered []`._
-_Expect: beepBoop(4).toEqual([4]);_
+_Test: The number the user submits into the form should return a number range from 0 to (number) & get pushed to array `roboArray []`._
+_Expect: userInput(4).toEqual([0, 1, 2, 3, 4]);_
 
-_Describe: beepBoop();_
-_Test: The function `beepBoop(); should turn the value the user inputs from form into a string._
-_Expect: beepBoop(4).toString(["4"]);_
+_Describe: `beepBoop();`_
+_Test: The function `beepBoop();` should set up a `for` loop with an index of 0 (to set minimum value), index length going until user's inputted number occurs, and i increasing by 1 for each number so that each number in `roboArray` can be evaluated._
+_Expect: beepBoop(someNumber){for (let i=0; i <= someNumber; i++)}._
 
-_Test: The array 'robogered' should get added to the DOM section "roboSays" and display a range of values from 0 to userNumber._
-_Expect: robogered.text[0:userNum]_ 
+_Test: The function `beepBoop();` should turn number range into a string (so that string.includes() can be used to evaluate numbers in range.)_
+_Expect: beepBoop(0, 1, 2, 3, 4).toString(["0, 1, 2, 3, 4"]);_
+_Note: see "comparing strings" & "string primitives & string objects" section on MDN for syntax guidance. [Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)._
 
-_Test: The function 'beepBoop(); should evaluate if the (now) string value .includes(1) and return true._
-_Expect: robogered.includes("12").toEqual("Beep!")_
+_Test: The function `beepBoop();` should evaluate if the (now) string value .includes(1) and return true._
+_Expect: robogered.includes("1").toEqual(true)_
 
 _Test1a: Function should add "Beep!" into the array beepBoop [] in place of "1"._
 _Code: if 1..._
-_Expect: beepBoop(1).toEqual(["0", "Beep!"]);_
+_Expect: roboArray(1).toEqual(["0", "Beep!"]);_
 
 _Test1b: Function should return "Boop!" into the array beepBoop [] in place of "2"._
 _Code: else if 2..._
-_Expect: beepBoop(2).toEqual(["0", "1", "Boop!"]);_
+_Expect: roboArray(2).toEqual(["0", "1", "Boop!"]);_
 
 _Test1c: Function should return "Won't you be my neighbor?" into the array beepBoop[] in place of "3"._
 _Code: else if 3..._
-_Expect: robogered(3).toEqual(["0", "1", "2", "Won't you be my neighbor?"]);_
-
+_Expect: roboArray(3).toEqual(["0", "1", "2", "Won't you be my neighbor?"]);_
 
 ###### Add Exceptions: 
+_Test2a: '3' takes precedence over '2'._
+_If a number entered by user contains both 2 and 3 (e.g. 23), all numbers containing 2 & 3 should be replaced in the array roboArray[] by the higher value's equivalent Roboger response._
+_Note: This test must come before all other exceptions, as it is the most specific of the if/else statements and will not run lower in if/else statement._
+_Code: if number.includes('2' && '3'), return '3' > '2'. ["Boop!"] < ["Won't you be my neighbor?"]._
+_Expect: roboArray(23).toEqual([..."Won't you be my neighbor?", ...])._
 
-_Test2a: '2' is more important than '1'._
-_If a number entered by user contains both 1 and 2 (e.g. 12), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._ 
-_Code: else if number.includes ('1' && '2'), return '2' > '1'. ["Beep!"] < ["Boop!"]._
-_Expect: robogered(12).toEqual([... "8", "9", "Beep!", "Beep!", "Boop!"]);_
-_Note: see "comparing strings" & "string primitives & string objects" section on MDN for syntax guidance (?). [Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)._
-
-_Test2b: '3' is more important than '2'._
-_If a number entered by user contains both 2 and 3 (e.g. 23), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
-_Code: else if number.includes('2' && '3'), return '3' > '2'. ["Boop!"] < ["Won't you be my neighbor?"]._
-_Expect: robogered(23).toEqual([..."Boop!", "Won't you be my neighbor?", 24, 25, 26]);_
-
-_Test2c: '3' is more important than '1'._
+_Test2b: '3' is more important than '1'._
 _If a number entered by user contains 1, 3 (e.g. 13), the number should be replaced in the array beepBoop[] by the higher value's equivalent Roboger response._
+_Note: This line of code when combined with the code from Test2a must come before all other exceptions, as it is the most specific of the if/else statements and will not run lower in if/else statement._
 _Code: else if number.includes('1' && '3'), return '3' > '1'. ["Beep!"] < ["Won't you be my neighbor?"]_
-_Expect: robogered(13).toEqual([...8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]);_
+_Expect: roboArray(13).toEqual([...8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]);_
 
-<!-- ###### Error Messages 
+_Test2c: '2' takes precedence over '1'._
+_If a number entered by user contains both 1 and 2 (e.g. 12), the number should be replaced in the roboArray[] by the higher value's equivalent Roboger response._ 
+_Code: else if number.includes ('1' && '2'), return '2' > '1'. ["Beep!"] < ["Boop!"]._
+_Expect: roboArray(12).toEqual([... "8", "9", "Beep!", "Beep!", "Boop!"]);_
+
+###### Connect User Interface
+_Test: The roboArray should get added to the DOM section "roboSays" and display the range of values & substituting words from 0 to userNumber._
+_Expect: robogered.text[0:userNum]_ 
+
+<!-- ###### Stretch Room - Error Messages 
 _Describe: robogered [];_
 _TestB: The user should receive an error message if any number outside of the range of 0-50,000 is entered._
 _Expect: User enters [-432'].toEqual[("Please enter a number w/in range (0-50,000).)"]_
@@ -97,12 +95,7 @@ _Expect: User enters ["Hello!"].toEqual[("That's not a number! Try again.")]_
 ![Flowchart of Error Messages](/images/Error-Messages.png) !-->
 
 ## Known bugs
-
-_Much bug. The only thing currently working as of 10.30.20 5:10pm was the user input plugging into the roboResponse section. Except for the one test I wanted to run that was *not* required in the project objects, no tests that I ran in an attempt to set any of the required exceptions passed, including for non-numbers, for 1 returning "boop!", and so forth._
-
+_As of 11.08.2020, business logic and user interface logic are not 'talking' correctly when form submits. Form refreshes instead of displaying array. When console logged, roboArray also not functioning properly - displays just index number(0), not entire array._
 
 ### Legal, or License 
-
-_{License info w/ copyright & date, license type (MIT, GPL, etc), list of contributors/company name}_
-
 _MIT_ Copyright (c) 2020 **_Danielle Thompson_**
