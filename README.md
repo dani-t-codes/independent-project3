@@ -61,7 +61,7 @@ _Test1c: Function should return "Won't you be my neighbor?" into the array beepB
 _Code: else if 3..._
 _Expect: roboArray(3).toEqual(["0", "1", "2", "Won't you be my neighbor?"]);_
 
-###### Add Exceptions: 
+###### Add Exceptions to BeepBoop with if/else if statement 
 _Test2a: '3' takes precedence over '2'._
 _If a number entered by user contains both 2 and 3 (e.g. 23), all numbers containing 2 & 3 should be replaced in the array roboArray[] by the higher value's equivalent Roboger response._
 _Note: This test must come before all other exceptions, as it is the most specific of the if/else statements and will not run lower in if/else statement._
