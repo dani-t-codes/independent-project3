@@ -5,7 +5,6 @@
 #### Danielle Thompson
 
 ## Description
-
 _This web application takes a number from the user and returns a 'robotic', Mr. Rogers-esque range of numbers in response. Any number in range from 0 to the user's inputted value that contains the digit '1' will be replaced with a "Beep!". Any inputted number that contains the digit '2' will be replaced with "Boop!". The number '3' will be exchanged for "Won't you be my neighbor?". Where two or more of the substituted numbers occur simultaneously, the returned word will be attributed to the higher number value (i.e. if 23, then "Won't you be my neighbor?")_ 
 
 _This project focuses on using beginner-level arrays and loops in Javascript, as well as branching, and HTML and CSS styling where appropriate._
@@ -25,7 +24,6 @@ _jQuery Library_
 * _Read through the prompt on the index page, and enter your number to see Mr. Roboger's response._
 
 ## Testing 
-
 ###### Setup
 _Describe: roboArray_
 _Test: The array roboArray = []; should be created to hold incoming user-inputted values._
@@ -83,19 +81,6 @@ _Expect: roboArray(12).toEqual([... "8", "9", "Beep!", "Beep!", "Boop!"]);_
 ###### Connect User Interface
 _Test: The roboArray should get added to the DOM section "roboSays" and display the range of values & substituting words from 0 to userNumber._
 _Expect: robogered.text[0:userNum]_ 
-
-<!-- ###### Stretch Room - Error Messages 
-_Describe: robogered [];_
-_TestB: The user should receive an error message if any number outside of the range of 0-50,000 is entered._
-_Expect: User enters [-432'].toEqual[("Please enter a number w/in range (0-50,000).)"]_
-
-_TestC: The user should receive an error message if any non-number is entered._
-_Expect: User enters ["Hello!"].toEqual[("That's not a number! Try again.")]_
-
-![Flowchart of Error Messages](/images/Error-Messages.png) !-->
-
-## Known bugs
-_As of 11.08.2020, business logic and user interface logic are not 'talking' correctly when form submits. Form refreshes instead of displaying array. When console logged, roboArray also not functioning properly - displays just index number(0), not entire array._
 
 ### Legal, or License 
 _MIT_ Copyright (c) 2020 **_Danielle Thompson_**
