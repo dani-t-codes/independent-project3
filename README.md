@@ -37,6 +37,7 @@ _Expect: .submit(button).show(userInput)_
 _Test: The number the user submits into the form should return a number range from 0 to (number) & get pushed to array `roboArray []`._
 _Expect: userInput(4).toEqual([0, 1, 2, 3, 4]);_
 
+###### BeepBoop Function
 _Describe: `beepBoop();`_
 _Test: The function `beepBoop();` should set up a `for` loop with an index of 0 (to set minimum value), index length going until user's inputted number occurs, and i increasing by 1 for each number so that each number in `roboArray` can be evaluated._
 _Expect: beepBoop(someNumber){for (let i=0; i <= someNumber; i++)}._
