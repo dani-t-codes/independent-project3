@@ -10,9 +10,9 @@ _This web application takes a number from the user and returns a 'robotic', Mr. 
 _This project focuses on using beginner-level arrays and loops in Javascript, as well as branching, and HTML and CSS styling where appropriate._
 
 ## Technologies used
-_Javascript_
-_Bootstrap Library_
-_jQuery Library_
+* _Javascript_
+* _Bootstrap Library_
+* _jQuery Library_
 
 ## Complete setup/installation instructions/requirements
 * _For Mac users, find Terminal in your Finder, and open a new window. Install the package manager, (Homebrew) [https://brew.sh/], on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
