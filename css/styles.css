@@ -1,36 +1,42 @@
 body {
-  background-color: slategrey;
+  background-image: url('/img/robo-in-the-city.jpg');
+  background-size: cover;
   color: whitesmoke;
-  font-family: Roboto;
+  font: Roboto;
   margin-left: auto;
 }
 
 h3, h4, #roboResponse {
-  font-family: Quirky Robot Italic;
-  letter-spacing: 2px;
+  font-family: Quirky Robot;
+  letter-spacing: 4px;
   padding: 10px 10px 10px 10px;
 }
 
-#goGoRoboger {
+#goGoRoboger, #try-again {
   font-size: 14pt;
+  font-family: Roboto monospace;
+  background-color: #BF265E;
+  color: white;
 }
 
-#goGoRoboger:hover {
-  background-color: #008CBA;
+#goGoRoboger:hover, #try-again:hover {
+  background-color: #8C275F;
   color: white; 
   font-size: 16pt;
   font-style: bold;
   border: 3px solid rgba(193, 183, 183, 0.947);
   border-radius: 8px;
   box-shadow: gray;
-  font-family: Quirky Robot Italic;
+  font-family: Quirky Robot;
   padding: 10px 10px 10px 10px;
 }
-
+#robo-numbers{
+  font-family: Roboto monospace;
+}
 #roboForm {
   padding: 15px 15px 15px 15px;
 }
 
-.roboSays, #errorNaN, #errorOutOfRange {
+.roboSays {
   display: none;
 }
