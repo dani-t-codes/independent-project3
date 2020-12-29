@@ -17,11 +17,11 @@ _This project focuses on using beginner-level arrays and loops in Javascript, as
 ## Complete setup/installation instructions/requirements
 Access the live project at https://dani-t-codes.github.io/independent-project3, or follow the instructions to clone the project to your local computer. 
 
-* _For Mac users, find Terminal in your Finder, and open a new window. Install the package manager, (Homebrew) [https://brew.sh/], on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
+* _For Mac users, find Terminal in your Finder, and open a new window. Install the package manager, [Homebrew](https://brew.sh/), on your device by entering this line of code in Terminal: `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`._
 * _Once homebrew is installed, install Git, a version control system for code writers, with this line of code `brew install git`._
 
 * _For Windows users, open a new Command Prompt window by typing "Cmd" in your computer's search bar._
-* _Once you have Homebrew &/or Git installed on your computer, go to this (GitHub repository)[https://github.com/dani-t-codes/independent-project2] and clone this application with the following command:`git clone https://github.com/dani-t-codes/independent-project2`._
+* _Once you have Homebrew &/or Git installed on your computer, go to this [GitHub repository](https://github.com/dani-t-codes/independent-project2) and clone this application with the following command:`git clone https://github.com/dani-t-codes/independent-project2`._
 * _Open the index.html in your web browser of choice, either by double-clicking the file icon inside the project folder, or by opening File>Open File>"index.html" from the independent-project2 folder that you cloned onto your computer._
 * _Read through the prompt on the index page, and enter your number to see Mr. Roboger's response._
 
