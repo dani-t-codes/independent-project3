@@ -1,5 +1,6 @@
 body {
-  background-image: url('https://dani-t-codes.github.io/robo-in-the-city.jpg');
+  background-image: url('../img/robo-in-the-city.jpg');
+  /*background: navy;*/
   background-size: cover;
   color: whitesmoke;
   font: Roboto;
